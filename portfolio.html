@@ -1,0 +1,90 @@
+<!-- Create a basic HTML structure with the main sections of your portfolio:
+About
+Work
+Contact
+
+Create a navbar element that lets you navigate to each of the main sections using #<section_id>
+
+Create a welcome section with:
+*An id.
+*An h1 element with your name.
+
+Create a projects section with:
+*An id 
+*A list of elements with at least one project with the following information:
+*Title
+*Description
+*Image with a link to preview the project
+**Use CSS classes to reuse the styles for each project element (title, description and image).
+
+Create a contact section with:
+*Your contact information
+*Icons and links (that open in a new tab) to your GitHub, Facebook and Linkedin page.
+*Make sure your website is responsive (for both mobile and desktop).
+
+*Read the instructions about GitHub pages (Links to an external site.).
+*Modify your repository structure so you can access your website in a public GitHub url. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jennifer Lam</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="My portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed">
+        <script src="https://kit.fontawesome.com/144c0e3213.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul id="navList">
+                    <li><a href="#welcome">About</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main"> 
+            <section id="welcome"> 
+                <img src="https://cdn.pixabay.com/photo/2018/03/19/11/06/dog-3239718__340.jpg" alt="A random photo for now"/>
+                <hgroup> 
+                    <h1>Jennifer Lam</h1>
+                    <h3>Aspiring Web Developer</h3>
+                    <p>Sydney, Australia</p>
+                </hgroup>
+            </section>
+
+            <section id="projects"> 
+                <h2>Projects</h2>
+                <div class="card-container"> 
+                    <div class="card">
+                        <a href="#"><img src="https://cdn.pixabay.com/photo/2016/11/03/07/16/agenda-1793664__340.jpg" alt="agenda"></a>
+                        <h3>JeMo Task Planner App</h3>
+                        <p>An app to help your team stay on top of tasks.</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="#"><img src="https://cdn.pixabay.com/photo/2016/04/05/21/42/dog-1310545__340.jpg" alt="wet dog"></a>
+                        <h3>Bootstrap Album</h3>
+                        <p>A curated collection of dogs in water.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact"> 
+                <h2>Contact</h2>
+                <ul id="contactList">
+                    <li>e: jlam86@gmail.com</li> 
+                    <li><a href="https://github.com/jen-la"><span class="fab fa-github"></span>Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/jennifer-lam-b609a062/"><span class="fab fa-linkedin"></span>LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/jennifer.lam.5099/"><span class="fab fa-facebook"></span>Facebook</li>
+                    <li><a href="https://twitter.com/Jennife25538624"><span class="fab fa-twitter"></span>Twitter</li>
+                </ul>
+            </section>
+        </main>
+        <footer>&copy; Jennifer Lam 2020</footer>
+        <script src="script.js"></script>
+    </body>
+</html>
